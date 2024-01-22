@@ -23,7 +23,7 @@ jobs:
         pip install .
     - name: Sphinx Build
       run: |
-        site
+        sphinx-build -b html site/ out/
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
       with:
